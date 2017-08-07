@@ -2139,7 +2139,7 @@ HRESULT WINAPI XTL::EMUPATCH(Direct3D_CreateDevice)
     IDirect3DDevice8          **ppReturnedDeviceInterface
 )
 {
-	FUNC_EXPORTS
+	//FUNC_EXPORTS
 
 	LOG_FUNC_BEGIN
 		LOG_FUNC_ARG(Adapter)
@@ -2636,7 +2636,7 @@ VOID WINAPI XTL::EMUPATCH(D3DDevice_SelectVertexShader)
 // ******************************************************************
 VOID WINAPI XTL::EMUPATCH(D3D_KickOffAndWaitForIdle)()
 {
-	FUNC_EXPORTS
+	//FUNC_EXPORTS
 
 	LOG_FUNC();
 
@@ -9375,7 +9375,7 @@ VOID WINAPI XTL::EMUPATCH(D3DDevice_GetProjectionViewportMatrix)
 // ******************************************************************
 VOID WINAPI XTL::EMUPATCH(D3DDevice_KickOff)()
 {
-	FUNC_EXPORTS
+	//FUNC_EXPORTS
 		
 	LOG_FUNC();
 
