@@ -2047,7 +2047,7 @@ static void pgraph_method(unsigned int subchannel, unsigned int method, uint32_t
 					pgraph.regs[NV_PGRAPH_FOGPARAM0 + slot * 4] = parameter;
 				}
 				else {
-					/* FIXME: No idea where slot = 2 is */
+					/* Turns out slot 2 doesn't get put into the PGRAPH regs, according to envytools hwtests. */
 				}
 
 				pgraph.ltctxa[NV_IGRAPH_XF_LTCTXA_FOG_K][slot] = parameter;
